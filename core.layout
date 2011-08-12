@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="debug" />
+	<File name="CMakeLists.txt" open="0" top="0" tabpos="1">
+		<Cursor position="166" topLine="2" />
+	</File>
+	<File name="include/buffers/filebuffer.h" open="0" top="0" tabpos="7">
+		<Cursor position="690" topLine="9" />
+	</File>
+	<File name="include/buffers/membuffer.h" open="0" top="0" tabpos="3">
+		<Cursor position="1486" topLine="46" />
+	</File>
+	<File name="include/buffers/tempfilebuffer.h" open="0" top="0" tabpos="3">
+		<Cursor position="504" topLine="6" />
+	</File>
+	<File name="include/buffers/volatilebuffer.h" open="0" top="0" tabpos="0">
+		<Cursor position="754" topLine="26" />
+	</File>
+	<File name="include/iobuffer.h" open="0" top="0" tabpos="1">
+		<Cursor position="1181" topLine="8" />
+	</File>
+	<File name="include/lock.h" open="0" top="0" tabpos="0">
+		<Cursor position="97" topLine="0" />
+	</File>
+	<File name="include/log/logmanager.h" open="0" top="0" tabpos="8">
+		<Cursor position="762" topLine="63" />
+	</File>
+	<File name="include/log/message.h" open="0" top="0" tabpos="2">
+		<Cursor position="2171" topLine="61" />
+	</File>
+	<File name="include/random.h" open="0" top="0" tabpos="5">
+		<Cursor position="1524" topLine="24" />
+	</File>
+	<File name="include/random/lincong.h" open="0" top="0" tabpos="0">
+		<Cursor position="668" topLine="11" />
+	</File>
+	<File name="include/resultcode.h" open="0" top="0" tabpos="0">
+		<Cursor position="972" topLine="0" />
+	</File>
+	<File name="includes-pch.h" open="0" top="0" tabpos="13">
+		<Cursor position="561" topLine="9" />
+	</File>
+	<File name="lpassert.h" open="0" top="0" tabpos="0">
+		<Cursor position="154" topLine="0" />
+	</File>
+	<File name="src/buffers/filebuffer.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="1666" topLine="72" />
+	</File>
+	<File name="src/buffers/membuffer.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="1644" topLine="45" />
+	</File>
+	<File name="src/buffers/tempfilebuffer.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="848" topLine="10" />
+	</File>
+	<File name="src/buffers/volatilebuffer.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="689" topLine="0" />
+	</File>
+	<File name="src/iobuffer.cpp" open="1" top="1" tabpos="3">
+		<Cursor position="2702" topLine="270" />
+	</File>
+	<File name="src/log/logmanager.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="0" topLine="8" />
+	</File>
+	<File name="src/random/lincong.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="744" topLine="0" />
+	</File>
+	<File name="src/random/random.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="884" topLine="17" />
+	</File>
+	<File name="src/resultcode.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="50" topLine="0" />
+	</File>
+	<File name="src/string.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="151" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>
