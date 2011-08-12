@@ -1,0 +1,57 @@
+#pragma once
+
+#include "../includes.h"
+
+namespace libredwg2 {
+
+class Schema;
+
+class Archive
+{
+  ////////////////////////////////////////////////////////////////
+  // Definitions
+  ////////////////////////////////////////////////////////////////
+  public:
+
+  ////////////////////////////////////////////////////////////////
+  // Members
+  ////////////////////////////////////////////////////////////////
+  private:
+    /// The filebuffer to read from
+    std::ifstream fileStream_;
+
+    /// The size of the file
+    size_t size_;
+
+  ////////////////////////////////////////////////////////////////
+  // Constructors & Destructor
+  ////////////////////////////////////////////////////////////////
+  public:
+    Archive();
+    virtual ~Archive();
+
+  ////////////////////////////////////////////////////////////////
+  // Operators
+  ////////////////////////////////////////////////////////////////
+  private:
+
+  ////////////////////////////////////////////////////////////////
+  // Functions
+  ////////////////////////////////////////////////////////////////
+  public:
+    /// Restore a schema from a file
+    /// @param pathFile a (valid) file path to a drawing file
+    /// @param ptrSchema a pointer to a schema restored from that file. ptrSchema->reset() will be called
+    core::ResultCode restore(const boost::filesystem::path& pathFile, boost::shared_ptr<Schema>& ptrSchema);
+
+    /// Read bytes from the file
+    /// @param buffer the buffer to write data into
+    /// @param pos the start position in the file
+    /// @param len the length of data to read
+    /// @param strict if set to false will read as much as possible even if less than len
+    core::ResultCode read(core::IWriteBuffer& buffer, size_t pos, size_t len, bool strict = true);
+};
+
+////////////////////////////////////////////////////////////////
+
+}
