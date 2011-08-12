@@ -8,7 +8,7 @@ SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY bin)
 ######## ALL DLLs ########
 
 ADD_SUBDIRECTORY(core)
-ADD_SUBDIRECTORY(libredwgcpp)
+ADD_SUBDIRECTORY(libredwgpp)
 
 ######## SETUP ########
 
