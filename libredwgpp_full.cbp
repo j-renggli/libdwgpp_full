@@ -86,7 +86,6 @@
 		<Unit filename="libredwgpp/file/archive.h" />
 		<Unit filename="libredwgpp/includes-pch.h" />
 		<Unit filename="libredwgpp/includes.h" />
-		<Unit filename="libredwgpp/libredwg2.h" />
 		<Unit filename="libredwgpp/parser/class.cpp" />
 		<Unit filename="libredwgpp/parser/class.h" />
 		<Unit filename="libredwgpp/parser/decoder.h" />
@@ -145,13 +144,16 @@
 		<Unit filename="libredwgpp/schema/face3d.h" />
 		<Unit filename="libredwgpp/schema/schema.h" />
 		<Unit filename="libredwgpp/schema/vertex3d.h" />
-		<Unit filename="libredwgpp/test.cpp" />
 		<Unit filename="makedebug.sh" />
 		<Unit filename="remake.sh" />
 		<Unit filename="testing/CMakeLists.txt" />
 		<Unit filename="testing/ProgramOptions.txt" />
 		<Unit filename="testing/suite/dwgbuffer.cpp" />
 		<Unit filename="testing/suite/dwgbuffer.h" />
+		<Unit filename="testing/suite/objects.cpp" />
+		<Unit filename="testing/suite/objects.h" />
+		<Unit filename="testing/suite/schemas/schemaface3d.h" />
+		<Unit filename="testing/suite/schemas/schemanoop.h" />
 		<Unit filename="testing/suite/suite.h" />
 		<Unit filename="testing/testing.cpp" />
 		<Unit filename="testing/utils/clock.h" />

@@ -22,6 +22,7 @@ SET(UTILS_SRC
 testing.cpp
 
 suite/dwgbuffer.cpp
+suite/objects.cpp
 
 utils/unittestsuite.cpp
 )

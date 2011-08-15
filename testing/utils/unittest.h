@@ -109,17 +109,17 @@ if (sstrTests.empty() || sstrTests.find(#a) != sstrTests.end()) {\
 
 #define END_UNITTEST };
 
-#define ASSERT_TRUE(a)\
-if (!(a)) {\
+#define ASSERT_TRUE(expr)\
+if (!(expr)) {\
   std::stringstream ssExpr;\
-  ssExpr << #a << " expected true";\
+  ssExpr << #expr << " expected true";\
   throw UnitTestException(__LINE__, ssExpr.str());\
 };
 
-#define ASSERT_MESSAGE(a, b)\
-if (!(a)) {\
+#define ASSERT_MESSAGE(expr, msg)\
+if (!(expr)) {\
   std::stringstream ssExpr;\
-  ssExpr << "Failed with message: " << b;\
+  ssExpr << "Failed with message: " << msg;\
   throw UnitTestException(__LINE__, ssExpr.str());\
 };
 

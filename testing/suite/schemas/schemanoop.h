@@ -1,10 +1,11 @@
 #pragma once
 
-namespace libredwg2 {
+#include <libredwgpp/parser/version.h>
+#include <libredwgpp/schema/schema.h>
 
-////////////////////////////////////////////////////////////////
+using namespace libredwgpp;
 
-class Schema
+class NoOpSchema : public libredwgpp::ISchema
 {
   ////////////////////////////////////////////////////////////////
   // Definitions
@@ -20,22 +21,25 @@ class Schema
   // Constructors & Destructor
   ////////////////////////////////////////////////////////////////
   public:
-    Schema();
-    virtual ~Schema();
+    virtual ~NoOpSchema() {}
 
   ////////////////////////////////////////////////////////////////
   // Operators
   ////////////////////////////////////////////////////////////////
   private:
-    // Assignment
-//    Schema& operator=(const Schema& buffer) { return *this; }
 
   ////////////////////////////////////////////////////////////////
   // Functions
   ////////////////////////////////////////////////////////////////
   public:
+    virtual void addFace3d(const Face3d& face) {}
+
+//    virtual const std::vector<Face3d>& getFaces3d() const {}
+
+  public:
+    virtual void initialise(libredwgpp::Version version) {}
+
+    virtual void finalise() {}
+
+    virtual UnicodeString getVersion(libredwgpp::Version version) const { return ""; }
 };
-
-////////////////////////////////////////////////////////////////
-
-}
