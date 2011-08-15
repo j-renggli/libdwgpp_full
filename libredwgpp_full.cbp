@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="libredwgpp_full" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="debug">
+				<Option output="build/debug/bin/testing" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="(cd build/debug; $make -f $makefile testing)" />
+					<CompileFile command="(cd build/debug; $make -f $makefile $file)" />
+					<Clean command="(cd build/debug; $make -f $makefile clean)" />
+					<DistClean command="(cd build/debug; $make -f $makefile distclean)" />
+					<AskRebuildNeeded command="(cd build/debug; $make -q -f $makefile testing)" />
+					<SilentBuild command="(cd build/debug; $make -s -f $makefile testing)" />
+				</MakeCommands>
+			</Target>
+			<Target title="release">
+				<Option output="build/release/bin/testing" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="(cd build/release; $make -f $makefile testing)" />
+					<CompileFile command="(cd build/release; $make -f $makefile $file)" />
+					<Clean command="(cd build/release; $make -f $makefile clean)" />
+					<DistClean command="(cd build/release; $make -f $makefile distclean)" />
+					<AskRebuildNeeded command="(cd build/release; $make -q -f $makefile testing)" />
+					<SilentBuild command="(cd build/release; $make -q -f $makefile testing)" />
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="CMakeLists.txt" />
+		<Unit filename="core/include/buffers/filebuffer.h" />
+		<Unit filename="core/include/buffers/membuffer.h" />
+		<Unit filename="core/include/buffers/tempfilebuffer.h" />
+		<Unit filename="core/include/buffers/volatilebuffer.h" />
+		<Unit filename="core/include/iobuffer.h" />
+		<Unit filename="core/include/lock.h" />
+		<Unit filename="core/include/log/coutdisplay.h" />
+		<Unit filename="core/include/log/display.h" />
+		<Unit filename="core/include/log/logmanager.h" />
+		<Unit filename="core/include/log/message.h" />
+		<Unit filename="core/include/log/simplefiledisplay.h" />
+		<Unit filename="core/include/random.h" />
+		<Unit filename="core/include/random/lincong.h" />
+		<Unit filename="core/include/resultcode.h" />
+		<Unit filename="core/include/string.h" />
+		<Unit filename="core/includes-pch.h" />
+		<Unit filename="core/includes.h" />
+		<Unit filename="core/lpassert.h" />
+		<Unit filename="core/src/buffers/filebuffer.cpp" />
+		<Unit filename="core/src/buffers/membuffer.cpp" />
+		<Unit filename="core/src/buffers/tempfilebuffer.cpp" />
+		<Unit filename="core/src/buffers/volatilebuffer.cpp" />
+		<Unit filename="core/src/iobuffer.cpp" />
+		<Unit filename="core/src/log/coutdisplay.cpp" />
+		<Unit filename="core/src/log/logmanager.cpp" />
+		<Unit filename="core/src/log/simplefiledisplay.cpp" />
+		<Unit filename="core/src/random/lincong.cpp" />
+		<Unit filename="core/src/random/random.cpp" />
+		<Unit filename="core/src/resultcode.cpp" />
+		<Unit filename="core/src/string.cpp" />
+		<Unit filename="libredwgpp/CMakeLists.txt" />
+		<Unit filename="libredwgpp/errorcodes.cpp" />
+		<Unit filename="libredwgpp/errorcodes.h" />
+		<Unit filename="libredwgpp/file/archive.cpp" />
+		<Unit filename="libredwgpp/file/archive.h" />
+		<Unit filename="libredwgpp/includes-pch.h" />
+		<Unit filename="libredwgpp/includes.h" />
+		<Unit filename="libredwgpp/libredwg2.h" />
+		<Unit filename="libredwgpp/parser/class.cpp" />
+		<Unit filename="libredwgpp/parser/class.h" />
+		<Unit filename="libredwgpp/parser/decoder.h" />
+		<Unit filename="libredwgpp/parser/dwgbuffer.cpp" />
+		<Unit filename="libredwgpp/parser/dwgbuffer.h" />
+		<Unit filename="libredwgpp/parser/handle.h" />
+		<Unit filename="libredwgpp/parser/object.h" />
+		<Unit filename="libredwgpp/parser/objects/blockcontrol.cpp" />
+		<Unit filename="libredwgpp/parser/objects/blockcontrol.h" />
+		<Unit filename="libredwgpp/parser/objects/dictionary.cpp" />
+		<Unit filename="libredwgpp/parser/objects/dictionary.h" />
+		<Unit filename="libredwgpp/parser/objects/entity.cpp" />
+		<Unit filename="libredwgpp/parser/objects/entity.h" />
+		<Unit filename="libredwgpp/parser/objects/face3d.cpp" />
+		<Unit filename="libredwgpp/parser/objects/face3d.h" />
+		<Unit filename="libredwgpp/parser/objects/layer.cpp" />
+		<Unit filename="libredwgpp/parser/objects/layer.h" />
+		<Unit filename="libredwgpp/parser/objects/line.cpp" />
+		<Unit filename="libredwgpp/parser/objects/line.h" />
+		<Unit filename="libredwgpp/parser/objects/object.cpp" />
+		<Unit filename="libredwgpp/parser/objects/object.h" />
+		<Unit filename="libredwgpp/parser/objects/shapefile.cpp" />
+		<Unit filename="libredwgpp/parser/objects/shapefile.h" />
+		<Unit filename="libredwgpp/parser/objects/undocumentedcontrol.cpp" />
+		<Unit filename="libredwgpp/parser/objects/undocumentedcontrol.h" />
+		<Unit filename="libredwgpp/parser/objects/vertex3d.cpp" />
+		<Unit filename="libredwgpp/parser/objects/vertex3d.h" />
+		<Unit filename="libredwgpp/parser/page.h" />
+		<Unit filename="libredwgpp/parser/parser.cpp" />
+		<Unit filename="libredwgpp/parser/parser.h" />
+		<Unit filename="libredwgpp/parser/r2000/parser2000.cpp" />
+		<Unit filename="libredwgpp/parser/r2000/parser2000.h" />
+		<Unit filename="libredwgpp/parser/r2004/decoder2004_2.cpp" />
+		<Unit filename="libredwgpp/parser/r2004/decoder2004_2.h" />
+		<Unit filename="libredwgpp/parser/r2004/parser2004.cpp" />
+		<Unit filename="libredwgpp/parser/r2004/parser2004.h" />
+		<Unit filename="libredwgpp/parser/r2004/section2004.cpp" />
+		<Unit filename="libredwgpp/parser/r2004/section2004.h" />
+		<Unit filename="libredwgpp/parser/r2004/sectioninfo.cpp" />
+		<Unit filename="libredwgpp/parser/r2004/sectioninfo.h" />
+		<Unit filename="libredwgpp/parser/r2004/sectionmap.cpp" />
+		<Unit filename="libredwgpp/parser/r2004/sectionmap.h" />
+		<Unit filename="libredwgpp/parser/r2004/sectionobjects.cpp" />
+		<Unit filename="libredwgpp/parser/r2004/sectionobjects.h" />
+		<Unit filename="libredwgpp/parser/section.cpp" />
+		<Unit filename="libredwgpp/parser/section.h" />
+		<Unit filename="libredwgpp/parser/sections/classes.cpp" />
+		<Unit filename="libredwgpp/parser/sections/classes.h" />
+		<Unit filename="libredwgpp/parser/sections/objects.cpp" />
+		<Unit filename="libredwgpp/parser/sections/objects.h" />
+		<Unit filename="libredwgpp/parser/version.cpp" />
+		<Unit filename="libredwgpp/parser/version.h" />
+		<Unit filename="libredwgpp/schema/colour.cpp" />
+		<Unit filename="libredwgpp/schema/colour.h" />
+		<Unit filename="libredwgpp/schema/face3d.cpp" />
+		<Unit filename="libredwgpp/schema/face3d.h" />
+		<Unit filename="libredwgpp/schema/schema.h" />
+		<Unit filename="libredwgpp/schema/vertex3d.h" />
+		<Unit filename="libredwgpp/test.cpp" />
+		<Unit filename="makedebug.sh" />
+		<Unit filename="remake.sh" />
+		<Unit filename="testing/CMakeLists.txt" />
+		<Unit filename="testing/ProgramOptions.txt" />
+		<Unit filename="testing/suite/dwgbuffer.cpp" />
+		<Unit filename="testing/suite/dwgbuffer.h" />
+		<Unit filename="testing/suite/suite.h" />
+		<Unit filename="testing/testing.cpp" />
+		<Unit filename="testing/utils/clock.h" />
+		<Unit filename="testing/utils/unittest.h" />
+		<Unit filename="testing/utils/unittestsuite.cpp" />
+		<Unit filename="testing/utils/unittestsuite.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -9,6 +9,7 @@ SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY bin)
 
 ADD_SUBDIRECTORY(core)
 ADD_SUBDIRECTORY(libredwgpp)
+ADD_SUBDIRECTORY(testing)
 
 ######## SETUP ########
 
