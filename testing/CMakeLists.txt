@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION 2.6)
 ######## SETUP ########
 
 SET(CMAKE_VERBOSE_MAKEFILE 0)
-SET(CMAKE_CXX_FLAGS_DEBUG "-Wall -O -ansi -pedantic -g -pg -Wno-long-long -DDEBUG")
-SET(CMAKE_CXX_FLAGS_RELEASE "-Wall -O3 -ansi -pedantic -g -pg -Wno-long-long")
+SET(CMAKE_CXX_FLAGS_DEBUG "-Wall -O -ansi -pedantic -g -pg -DDEBUG")
+SET(CMAKE_CXX_FLAGS_RELEASE "-Wall -O3 -ansi -pedantic -g -pg")
 
 SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../bin)
 
